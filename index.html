@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Thrift contribution</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="home">
+            <nav>
+                <div class="row">
+                    <div class="naykas">
+                        <h2>Thrift Contribution</h2>
+                    </div>
+                    <ul class="main-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#works">How It Works</a></li>
+                        <li><a href="#register">Profile</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-text">
+                <h1>Thrift Contribution.<br> Making Financial Life Better Together.</h1>
+                <div class="para-text">
+                <p>It's not how much you make each months that matters.</p>
+                <p>its how much you save along with the flexible and time outside work that you hvae.</p>
+                    <p>join our community in reaching out to people today</p>
+                </div>    
+                <a class="btn btn-bec js--scroll-to-register" href="#register">Become A Member</a>
+                <a class="btn btn-con js--scroll-to-pay" href="#payment">Contribute</a>
+            </div>
+        </header>
+        <section class="section-steps js--works" id="works" >
+            <div class="row">
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <img src="resources/css/img/Google_Pay_Search.gif" alt="Omnifood app on iphone" class="app-screen js--wp-2">
+                </div>
+                <div class="col span-1-of-2 steps-box-2">
+                    <div class="works">
+                        <div class="works-step">
+                        <div>1</div>
+                        <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>2</div>
+                        <p>Every member of the group is mandated to make thier contribution within the last seven days of each month end</p>
+                    </div>
+                    <div class="works-step">
+                        <div>3</div>
+                        <p>The total contribution would be given to the member whom is next in line </p>
+                    </div>
+                    <a href="#" class="button-app"><img src="resources/img/download-app.svg" alt="App store button"></a>
+                    <a href="#" class="button-app"><img src="resources/img/download-app-android.png" alt="Play store"></a>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+        
+        <section class="register js--section-register" id="register">
+            <div class="row">
+                <h2>Join Our Team Today!</h2>
+            </div>
+            
+            <div class="row">
+                <form method="post" action="mailer.php" class="register-form">
+                    <label for ="fullname">Full Name :</label><br>
+                    <input type="text" id="name" name="fullname"><br>
+                    
+                    <label for ="Email">Email :</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    
+                    <label for ="Address">Address :</label><br>
+                    <input type="text" id="address" name="address"><br>
+                    
+                    <label for ="Phone No">Phone No :</label><br>
+                    <input type="tel" id="phone" name="phone"><br>
+                    
+                    <label for ="Account">Account No :</label><br>
+                    <input type="tel" id="acc" name="acc"><br>
+                    
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="male">Female</label><br>
+                    
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+                    
+                    <input type="checkbox" name="news" id="news" > yes,
+                    <label for="name">I agree to the Terms Of Servise and Privacy Policy</label><br>
+                    <div class="sign">
+                    <input type="submit" value="Sign up">
+                    </div>    
+                </form>    
+            </div>
+        </section>
+        <section class="payment js--section-pay" id="payment">
+            <div class="row">
+                <h2>Payment Information</h2>
+            </div>
+            
+            <div class="row">
+                <form method="post" action="mailer.php" class="payment-form">
+                    <label for ="card"> Name of Card :</label><br>
+                    <input type="text" id="Cardname" name="Cardname" placeholder="Card Name"><br>
+            
+                    <label for ="cardnum">Card Number :</label><br>
+                    <input type="tel" id="Cardnum" name="Cardnum" placeholder="Valid Card Number"><br>
+                    
+                    <div class="field-container">
+                    <label for="expirationdate">Expiration (mm/yy)</label><br>
+                    <input id="expirationdate" type="text" placeholder="MM/YY" pattern="[0-9]*" inputmode="numeric">
+                   </div>
+                    
+                    <div class="field-container">
+                    <label for="securitycode">Security Code</label><br>
+                    <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric"><br>
+                    </div>
+                    
+                    <div class="sub">
+                        <input type="submit" onclick="location.href='https://paystack.com/';"value="PAY">
+                    </div>
+                </form>    
+            </div>
+        </section>
+        
+        <footer class="footer-override">
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <div class="copy">
+                        <p> Copyright &copy; 2021 by Group 11 Project Team.</p>
+                    </div> 
+                </div>
+            </div>
+        </footer>
+        
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+     <script src="vendor/js/jquery.waypoints.min.js"></script>
+    
+    
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
+    
+    
+    </body>
+
+</html>
+    
+    
+    
+    
+    
+    
+    
